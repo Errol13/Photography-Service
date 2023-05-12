@@ -126,7 +126,7 @@
                             <label for="fee" class="col-md-4 col-form-label text-md-end">{{ __('Fee') }}</label>
 
                             <div class="col-md-6">
-                            <input id="fee" type="text" class="form-control @error('fee') is-invalid @enderror" name="fee" value="" placeholder="Enter Commission Fee" required autocomplete="new-fee">
+                            <input id="fee" type="text" class="form-control @error('fee') is-invalid @enderror" name="fee" value="" placeholder="Enter Commission Fee"  autocomplete="new-fee">
 
                                 @error('fee')
                                 <span class="invalid-feedback" role="alert">

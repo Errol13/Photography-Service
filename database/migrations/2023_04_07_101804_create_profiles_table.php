@@ -18,7 +18,7 @@ class CreateProfilesTable extends Migration
             $table->unsignedBigInteger("user_id");
             $table->string("project_count")->nullable();
             $table->string("fee")->nullable()->default('2,000');
-            $table->string("availability")->nullable()->default("Available");
+            $table->string("availability")->nullable()->default('Available');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
         });
